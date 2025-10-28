@@ -1,3 +1,61 @@
+# Hand Gesture Mouse Control
+
+This project implements a real-time hand gesture-based mouse control system using computer vision and machine learning.
+
+## Project Structure
+
+```
+HandGestureMouseControl/
+├── data/
+│   ├── raw/
+│   │   └── LeapGestRecog/                  # Unzipped dataset directory
+│   └── processed/
+│       └── gesture_images/                 # (Optional) Converted or cleaned images
+├── src/
+│   ├── data_preparation.py                 # Script to load, clean, preprocess dataset
+│   ├── hand_tracking.py                    # Real-time hand tracking module (MediaPipe)
+│   ├── gesture_control.py                  # Gesture recognition logic using dataset/model
+│   ├── mouse_controller.py                 # Control mouse actions via gestures
+│   ├── utils.py                             # Helper functions (mapping coords, smoothing, etc)
+│   └── main.py                              # Main entry: train model (optional) + run real-time system
+├── models/
+│   └── gesture_recognition_model.h5         # (If you train a model) saved model file
+├── notebooks/
+│   └── dataset_exploration.ipynb            # Notebook to explore dataset (visualise, stats)
+├── requirements.txt
+├── README.md
+├── project_report.docx
+├── flowchart.png
+└── .gitignore
+```
+
+## Setup
+
+1. Clone the repository and navigate to the project directory.
+2. Install dependencies: `pip install -r requirements.txt`
+3. Download the LeapGestRecog dataset and place it in `data/raw/LeapGestRecog/`.
+4. (Optional) Train the model using `python src/data_preparation.py` and save to `models/`.
+5. Run the real-time system: `python src/main.py`
+
+## Usage
+
+- Run `python src/main.py` to start the hand gesture mouse control.
+- Use gestures like fist (click), peace (scroll up), thumbs up (scroll down), point (move cursor).
+
+## Dependencies
+
+- OpenCV
+- MediaPipe
+- TensorFlow
+- PyAutoGUI
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Jupyter
+
+## License
+
+This project is licensed under the MIT License.
 
 
 
@@ -611,6 +669,7 @@ git commit -m "Initial commit"
 git remote add origin https://github.com/<your-username>/JavaCalculatorApp.git
 git branch -M main
 git push -u origin main
+
 
 
 
