@@ -1,18 +1,41 @@
-# 🧮 Simple Calculator using Python
 
-## 📘 Overview
-This is a **Simple Calculator** built using **Python**.  
-It performs basic arithmetic operations such as **Addition**, **Subtraction**, **Multiplication**, and **Division** through a simple command-line interface.  
-The project demonstrates basic programming concepts like functions, conditional statements, and user input handling in Python.
 
----
 
-## 🚀 Features
-- ➕ Addition  
-- ➖ Subtraction  
-- ✖️ Multiplication  
-- ➗ Division (with zero-division error handling)  
-- 🧑‍💻 User-friendly console interface  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -588,6 +611,7 @@ git commit -m "Initial commit"
 git remote add origin https://github.com/<your-username>/JavaCalculatorApp.git
 git branch -M main
 git push -u origin main
+
 
 
 
